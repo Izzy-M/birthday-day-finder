@@ -14,4 +14,15 @@ body{
     margin: 0px auto !important;width:60%;background-color: #f0f0f0;height: auto;padding-bottom:50px;
 }
 
-
+.formhead{
+height:auto;min-height:150px;background-color: cadetblue;min-width:fit-content;max-width: 100%; padding-left: 10px;text-align: center;font-family: rockwell;margin-bottom:50px;
+}
+.btfloat-r{
+    display:flex;justify-content: center;align-items: center;
+}
+::selection{
+    background-color: transparent;
+}
+.help{
+    width:40%;height:30px;background-color:transparent;
+}
