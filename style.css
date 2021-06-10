@@ -1,0 +1,17 @@
+.formb{
+    max-width:40%;
+}
+html{
+    background-color: #b8b8b8;
+}
+body{
+    background-color: #b8b8b8;
+}
+.inputholder{
+    padding-left:10px !important;
+}
+.ms{
+    margin: 0px auto !important;width:60%;background-color: #f0f0f0;height: auto;padding-bottom:50px;
+}
+
+
