@@ -1,21 +1,27 @@
 //Arrys to work with:
-weekDay=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var male=['Kwasi','Kwadwo', 'Kwabena', 'Kwaku','Yaw','Kofi','Kwame'];
-var female=['Akosua', 'Adwoa', 'Abenaa','Akua' ,'Yaa' ,'Afua','Ama'];
+    weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
-var day=trim(document.getElementById("day").value);
-var month=trim(document.getElementById("month").value);
-var year=trim(document.getElementById("year").value);
-var gender=document.getElementById("gender").value;
+    var day = document.getElementById("day");
+    var month = document.getElementById("month");
+    var year = document.getElementById("year");
+    var gender = document.getElementById("gender").value;
+    function sendData(){
+    var dayOfMonth=parseInt(day.value.replace(/\s+/g, ''));
+    var monthOfYear=parseInt(month.value.replace(/\s+/g, ''));
+    var yearOfBirth=parseInt(year.value.replace(/\s+/g, ''));
+    
 
-function dayValidate(){
-    let date=parseInt(day);
-    if(date==''){
-        document.getElementById("dayHelp").innerHTML="The input is empty";
-        document.getElementById("day").style.outlineColor="red";
+            document.getElementById('para').innerHTML=dayOfMonth+" "+monthOfYear+" "+yearOfBirth+" "+gender;
+        // if(dayOfMonth=''){
+        //     document.getElementById("dayHelp").innerHTML=;
+        // }
+        // else if(monthOfYear=''){
+        //     document.getElementById("monthHelp").innerHTML=;
+        // }
+        // else if(c=''){
+        //     document.getElementById("yearHelp").innerHTML=c;
+        // }
+
     }
-    else if(date.typeof == number){
-        document.getElementById("dayHelp").innerHTML="Enter a valid date!";
-        document.getElementById("day").style.outlineColor="red";
-    }
-}
