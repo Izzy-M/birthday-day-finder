@@ -7,10 +7,23 @@
     var month = document.getElementById("month");
     var year = document.getElementById("year");
     var gender = document.getElementById("gender").value;
-    function sendData(){
+
     var dayOfMonth=parseInt(day.value.replace(/\s+/g, ''));
     var monthOfYear=parseInt(month.value.replace(/\s+/g, ''));
     var yearOfBirth=parseInt(year.value.replace(/\s+/g, ''));
+
+    function validateDay(){
+        if(dayOfMonth=''){
+            document.getElementById("dayHelp").innerHTML="The input is Empty!";
+        }
+        else if(typeof dayOfMonth !=number){
+            document.getElementById("dayHelp").innerHTML= "The input value is Invalid!";
+        }
+
+    }
+  
+    function sendData(){
+   
     
 
             document.getElementById('para').innerHTML=dayOfMonth+" "+monthOfYear+" "+yearOfBirth+" "+gender;
