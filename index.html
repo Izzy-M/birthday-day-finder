@@ -14,50 +14,53 @@
 <nav></nav>
 
 <body>
-    <div class="container">
-        <div class>
-            <p id="para">
-                hello
-            </p>
-        </div>
-        <div class="ms">
-            <form action="post" onsubmit="getData(event)" id="inputData">
-                <div class="formhead">
-                    <h1> USER BIRTH DETAILS</h1>
-                </div>
-                <div class="form-group inputholder">
-                    <label for="day" class="form-label">Day of the Month</label>
-                    <input type="text" class="form-control formb" id="day" placeholder="Enter Month day" onkeyup=""
-                        autofocus>
-                    <div class="help" id="dayHelp"></div>
+    <div class="container-fluid">
 
+        <div class="row">
+            <div class="col-5">
+                <div class="">
+                    hello
                 </div>
-                <div class="form-group inputholder">
-                    <label for="month" class="form-label">Month of Birth</label>
-                    <input type="text" class="form-control formb" placeholder="Month of birth" id="month" onkeyup=";">
-                    <div class="help" id="monthHelp"></div>
-
-                </div>
-                <div class="form-group inputholder ">
-                    <label for="year"> Year of Birth</label>
-                    <input type="text" class="form-control formb" placeholder="Year of Birth" id="year" onkeyup="">
-                    <div class="help" id="yearHelp"></div>
-                </div>
-                <div class="form-group inputholder">
-                    Gender:
-                    <select class="form-control formb" name="gender" id="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </div>
-                <div class="form-group inputholder">
-                    <div class="btfloat-r">
-                        <button type="button" class="btn btn-primary" onclick="sendData()">Continue</button>
+            </div>
+            <div class="col-7">
+                <form action="post" onsubmit="getData(event)" id="inputData">
+                    <div class="formhead">
+                        <h1> USER BIRTH DETAILS</h1>
                     </div>
-                </div>
-            </form>
+                    <div class="form-group inputholder">
+                        <label for="day" class="form-label">Day of the Month</label>
+                        <input type="text" class="form-control formb" id="day" placeholder="Enter Month day"
+                            onkeyup="validateDay()" pattern="[0-9]{2}" title="Invalid input" autofocus>
+                        <div class="help" id="dayHelp"></div>
+
+                    </div>
+                    <div class="form-group inputholder">
+                        <label for="month" class="form-label">Month of Birth</label>
+                        <input type="text" class="form-control formb" placeholder="Month of birth" id="month"
+                            onkeyup="validateMonth()" pattern="[0-9]{2}" title="Invalid input">
+                        <div class="help" id="monthHelp"></div>
+
+                    </div>
+                    <div class="form-group inputholder ">
+                        <label for="year"> Year of Birth</label>
+                        <input type="text" class="form-control formb" placeholder="Year of Birth" id="year" onkeyup="">
+                        <div class="help" id="yearHelp"></div>
+                    </div>
+                    <div class="form-group inputholder">
+                        Gender:
+                        <select class="form-control formb" name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group inputholder">
+                        <div class="btfloat-r">
+                            <button type="button" class="btn btn-primary" onclick="sendData()">Continue</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 <script src="dayfinder.js" type="text/javascript"></script>
