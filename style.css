@@ -10,9 +10,10 @@ body{
 .inputholder{
     padding-left:10px !important;
 }
-.ms{
-    margin: 0px auto !important;width:60%;background-color: #f0f0f0;height: auto;padding-bottom:50px;
+input[type="text"],input[type="text"],input[type="text"]{
+    height:40px !important;width: 60% !important; outline: #b8b8b8 !important;
 }
+
 /* .alertbox{
     z-index: 99;cursor: pointer;border: 1px solid black;width:50%; margin: 0px auto;height: 40%;display:block;background-color: white;
 }
