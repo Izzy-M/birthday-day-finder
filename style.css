@@ -14,7 +14,6 @@ input[type="text"],input[type="text"],input[type="text"]{
     height:40px !important;width: 60% !important; outline: #b8b8b8 !important;
 }
 
-
 .formhead{
 height:auto;min-height:150px;background-color: cadetblue;min-width:fit-content;max-width: 100%; padding-left: 10px;text-align: center;font-family: rockwell;margin-bottom:50px;
 }
