@@ -6,11 +6,13 @@
 
  ## BDD
  Bellow is the expected behaviour of the application
-   |<th>INPUT</th>|<th>BEHAVIOUR</th>|
-   |Enter alphabets in date|Reject the input|
-   |Enter alphabets in month|Reject the input|
-   |Enter alphabet in year| Clear the input field|
-   |On submit inputs|Display alert with all details|
+ 
+   |INPUT|BEHAVIOUR| 
+   |:---------------------:|:--------------:|
+   |Enter alphabets in date|Reject the input| 
+   |Enter alphabets in month|Reject the input|  
+   |Enter alphabet in year| Clear the input field| 
+   |On submit inputs|Display alert with all details| 
  
  ## Installation instructions
  For any user to get access to this project, follow the following instructions:  
