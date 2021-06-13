@@ -15,9 +15,9 @@ function getData(e) {
 
     var date = new Date(year, month, day);
     if (gender == "male") {
-        alert("Your Ghanian "+gender+" name is " + male[date.getDay()] + "and you were born on a " + weekDay[date.getDay()]);
+        alert("Your Ghanian "+gender+" name is " + male[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
     }
     else if (gender == "female") {
-        alert("Your Ghanian "+gender +"name is " + female[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
+        alert("Your Ghanian "+gender +" name is " + female[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
     }
 }
