@@ -6,13 +6,18 @@
  
  ## Installation instructions
  For any user to get access to this project, follow the following instructions:  
-  *Download the Zip folder of this repository
-  *Unzip the downloaded folder
-  *Move or rename your unzipped folder
-  *Locate the index.html file
-  *Open with your favourite browser
+  - Download the Zip folder of this repository  
+  - Unzip the downloaded folder  
+  - Move or rename your unzipped folder  
+  - Locate the index.html file  
+  - Open with your favourite browser  
   
   ### Installation requirements
+   the only requirement is a computer having  
+    - A function computer  
+    - Broweser application  
+    - Internent connection to download the files
+   
  
  ## Visit site
  
