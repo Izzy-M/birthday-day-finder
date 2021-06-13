@@ -3,6 +3,14 @@
 ## Descrption
  This is a simple web application that is implemented using js, css,html and bootsrap to help individuals know their Ghanaian 
  name depending on gender and day of the week when they were born. 
+
+ ## BDD
+ Bellow is the expected behaviour of the application
+   |<th>INPUT</th>|<th>BEHAVIOUR</th>|
+   |Enter alphabets in date|Reject the input|
+   |Enter alphabets in month|Reject the input|
+   |Enter alphabet in year| Clear the input field|
+   |On submit inputs|Display alert with all details|
  
  ## Installation instructions
  For any user to get access to this project, follow the following instructions:  
