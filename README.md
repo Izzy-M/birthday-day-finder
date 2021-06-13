@@ -1,4 +1,4 @@
-# Ghanaian Birth Name
+# Akan Birth Name
 
 ## Descrption
  This is a simple web application that is implemented using js, css,html and bootsrap to help individuals know their Ghanaian 
