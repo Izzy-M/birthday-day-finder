@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <!-- online bootsrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="dayfinder.js"></script>
     <link rel="stylesheet" href="boot/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -28,16 +28,20 @@
                 </div>
             </div>
             <div class="col-7">
-                <form onsubmit="getData()" id="inputData">
+                <form onSubmit="getData(event);">
                     <div class="formhead">
                         <h1> USER BIRTH DETAILS</h1>
                     </div>
-                    <p>
+                    <div class="form-group">
+                        Gender: <br>
+                       <input type="text" class="form-control inputholder" minlength="4" maxlength="6" placeholder="Enter your gender" id="gender" autofocus required >
+                    </div>
+                    <div class="form-group">
                         Day: <br>
                         <input type="text" class="form-control" placeholder="Enter day of month" autocomplete="off"
-                            id="day" minlength="1" maxlength="2" max="31" min="1" required autofocus
+                            id="day" minlength="1" maxlength="2" max="31" min="1" required 
                             onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-                    </p>
+                    </div>
                     <div class="form-group">
                         Month: <br>
                         <input type="text" class="form-control inputholder" placeholder="Enter Month of Birth"
@@ -47,29 +51,24 @@
                         <div class="form-group">
                             Year: <br>
                             <input type="text" class="form-control inputholder" id="year"
-                                placeholder="Enter year of Birth" minlength="4" maxlength="4" autocomplete="off"
-                                min="1960" max="2012" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+                                placeholder="Enter year of Birth" minlength="4" maxlength="4"  autocomplete="off" min="1960" max="2012" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
                         </div>
-                        <div class="form-group">
-                            Gender: <br>
-                            <select name="gender" id="gender">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-2 offset-md-6">
-                                <button class="btn btn-primary"> Check</button>
+                                <button class="btn btn-primary" > Check</button>
                             </div>
                         </div>
                 </form>
-                <div class="card help" id="result">
-
+                <div class="card ms" id="result">
                 </div>
             </div>
         </div>
     </div>
 </body>
 
-
 </html>
+<script>
+    //Arrys to work with:
+  
+</script>
