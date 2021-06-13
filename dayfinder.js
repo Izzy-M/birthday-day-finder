@@ -1,21 +1,23 @@
-//Arrys to work with:
-window.addEventListener('load',function(){
-weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
-var day = document.getElementById("day");
-var month = document.getElementById("month");
-var year = document.getElementById("year");
-var gender = document.getElementById("gender").value;
+function getData(e) {
 
-var dayOfMonth = parseInt(day.value.replace(/\s+/g, ''));
-var monthOfYear = parseInt(month.value.replace(/\s+/g, ''));
-var yearOfBirth = parseInt(year.value.replace(/\s+/g, ''));
+    var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
 
-function sendData(){
-var today=new Date();
-document.getElementById("result").innerHTML=today.getDay(yearOfBirth,monthOfYear,dayOfMonth);
+    let day = document.getElementById("day").value;
+    let month = document.getElementById("month").value;
+    let year = document.getElementById("year").value;
+    var gender = document.getElementById("gender").value;
+
+    var date = new Date(year, month, day);
+    if (gender == "male") {
+        alert("Your Ghanian name is " + male[date.getDay()] + "and you were born on a " + weekDay[date.getDay()]);
+    }
+    else if (gender == "female") {
+        alert("Your Ghanian name is " + female[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
+    }
 }
-});
