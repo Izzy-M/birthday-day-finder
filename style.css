@@ -8,7 +8,7 @@ body{
     background-color: #b8b8b8;
 }
 .inputholder{
-    padding-left:10px !important;
+    height:40px !important;width: 60% !important; outline: #b8b8b8 !important;
 }
 input[type="text"],input[type="text"],input[type="text"]{
     height:40px !important;width: 60% !important; outline: #b8b8b8 !important;
