@@ -7,6 +7,7 @@ html{
 body{
     background-color: #b8b8b8;
 }
+.colholder{ margin-top:15% !important;display: flex !important;flex-direction: column !important;align-content: space-around !important;align-items: center !important;}
 .inputholder{
     height:40px !important;width: 60% !important; outline: #b8b8b8 !important;
 }
