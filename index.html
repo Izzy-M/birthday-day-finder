@@ -5,7 +5,9 @@
     <!-- online bootsrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--link to external javascript file-->
     <script src="dayfinder.js"></script>
+    <!--link to offline bootstrap-->
     <link rel="stylesheet" href="boot/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -17,9 +19,8 @@
 
 <body>
     <div class="container-fluid">
-
         <div class="row">
-            <div class="col-5">
+            <div class="col-5 colholder">
                 <div class="" id="para">
                     This is a simple web page window that will hep you to get your day of birth and give you
                     a Ghanian name depending on the gender and the day you were born.
@@ -42,7 +43,7 @@
                     <div class="form-group">
                         Day: <br>
                         <input type="text" class="form-control" placeholder="Enter day of month" autocomplete="off"
-                            id="day" minlength="1" maxlength="2" max="31" min="1" required 
+                            id="day" minlength="1" maxlength="2" max="31" min="1" required
                             onkeyup="this.value=this.value.replace(/[^\d]/,'')">
                     </div>
                     <div class="form-group">
@@ -54,12 +55,13 @@
                         <div class="form-group">
                             Year: <br>
                             <input type="text" class="form-control inputholder" id="year"
-                                placeholder="Enter year of Birth" minlength="4" maxlength="4"  autocomplete="off" min="1960" max="2012" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+                                placeholder="Enter year of Birth" minlength="4" maxlength="4" autocomplete="off"
+                                min="1960" max="2012" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-2 offset-md-6">
-                                <button class="btn btn-primary" > Check</button>
+                                <button class="btn btn-primary"> Check</button>
                             </div>
                         </div>
                 </form>
@@ -67,9 +69,4 @@
         </div>
     </div>
 </body>
-
 </html>
-<script>
-    //Arrys to work with:
-  
-</script>
