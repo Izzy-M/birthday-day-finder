@@ -10,10 +10,23 @@ function getData(e) {
     let year = document.getElementById("year").value;
     var gender = document.getElementById("gender").value;
 
-    var date = new Date(month+","+day+","+year);
+    var date = new Date(month + "," + day + "," + year);
 
     if (parseInt(day) > 31 || parseInt(day) < 1) {
         alert("Wrong input date!");
+    }
+    else if (parseInt(day) == 29 && parseInt(month) == 2 && parseInt(year) % 4 == 0 && gender == "female") {
+        alert("Your Akan " + gender + " name is " + female[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
+        document.getElementById("form").reset();
+    }
+    else if (parseInt(day) == 29 && parseInt(month) == 2 && parseInt(year) % 4 == 0 && gender == "male") {
+        alert("Your Akan " + gender + " name is " + male[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
+    }
+    else if (parseInt(day) > 28 && parseInt(month) == 2) {
+        alert("Incorrect date for month you entered!");
+    }
+    else if (parseInt(month) === 4 || parseInt(month) === 6 || parseInt(month) == 9 || parseInt(month) == 11 && parseInt(day) > 30) {
+        alert("Innocorrect day for thr month provided!");
     }
     else if (parseInt(month) > 12 || parseInt(month) < 1) {
         alert("Wrong input Month");
@@ -28,4 +41,6 @@ function getData(e) {
     else if (gender == "female") {
         alert("Your Akan " + gender + " name is " + female[date.getDay()] + " and you were born on a " + weekDay[date.getDay()]);
     }
+    document.getElementById("form").reset();
+
 }
